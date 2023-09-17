@@ -8,8 +8,20 @@
 <body>
 <textarea id="inputrichtext" cols="100" rows="10"></textarea>
 <textarea id="outputrichtext" cols="100" rows="10"></textarea>
-
-<input type="button" id="test1" value="点我">
+<div id="option">
+    <div id="max_level_set" class="option_child">
+        至多目录级：
+        <label for="max_level"></label><input type="text" id="max_level" value="2">
+    </div>
+    <div id="start_level_set" class="option_child">
+        启始目录级：
+        <label for="start_level"></label><input type="text" id="start_level" value="0">
+    </div>
+    <div class="option_child">
+        <input type="button" id="test2" value="点我进行正则化">
+        <input type="button" id="test1" value="点我整理目录" is_regex="false">
+    </div>
+</div>
 <script src="js.js"></script>
 </body>
 </html>
